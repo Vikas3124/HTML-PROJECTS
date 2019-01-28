@@ -1,0 +1,267 @@
+<?php
+ if (isset($_POST['submit'])) {  
+    
+    $username = $_POST['username'];
+    $phone = $_POST['phone'];
+    $to = $_POST['email'];
+    $date = $_POST['date'];
+    $message = $_POST['message'];
+    $from='info@hopeanimalclinichyd.com';
+    
+
+    $subject = 'Hello i am ' . $username . ' Need AN APPOINTMENT AT ' . $date;
+    $encoding = "utf-8";
+    
+   $header = 'From: info@hopeanimalclinichyd.com' . "\r\n" . 'Reply-To: info@hopeanimalclinichyd.com' . "\r\n";
+
+    // Send mail
+    $retval = mail($to, $subject, $message, $header);
+    
+    if( $retval == true ) {
+            
+            echo "<script>alert(Mail sent successfully);  </script>";
+         }
+
+  }
+  
+  
+?>
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact HopeAnimalClinicHyderabad</title>
+    <!-- Stylesheets -->
+	<link rel="shortcut icon" href="images/logo/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Responsive -->
+    <meta name="viewport" content="Their love and friendship is unconditional. They’re part of the family. And you’ll do whatever it takes to keep them healthy for years to come. 
+			At Hope Animal Clinic in Langer House, Hyderabad, we understand. That’s why we’re so passionate about pet care.">
+	<meta name="keywords" content="hopeanimalclinichyd, animalclinichyderabad, petclinichyderabad, petclinic">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body oncontextmenu="return false;">
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!--Header top area-->
+		<header class="main-header header-style-one">
+		<section class="header_top_area">
+		<div class="container">
+			<div class="header">
+			<div class="header_top_left">
+                <ul>
+                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        info@hopeanimalclinichyd.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+                        +91 9912350971</a></li>
+                </ul>
+			</div>
+            <div class="header_top_right">
+                <ul>
+                   <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+			</div>
+			</div>
+	</div>
+</section> 
+<!--/header_top_area-->
+
+            <!--Main Mane-->
+            <section class="main-menu-area menu-three">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="logo">
+                                <a href="index.php"><img src="images/logo/logo.png" alt=""></a>
+                            </div>
+                            <div class="menu clearfix">
+                                <nav class="main-menu pull-rigth">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="navbar-collapse collapse clearfix">
+									<ul class="navigation clearfix">
+										<li><a href="index.php">Home<br><span class="flaticon-pawprint"></span></a>
+										</li>
+										<li><a href="images.html">Gallery<br><span class="flaticon-pawprint"></span></a></li>
+										<li><a href="services.html">Services<br><span class="flaticon-pawprint"></span></a>
+										</li>
+										<li><a href="#">Cardio clinic<br><span class="flaticon-pawprint"></span></a>
+										</li>
+										<li><a href="#">Store<br><span class="flaticon-pawprint"></span></a>
+										</li>
+										<li><a href="blog.html">Announcements<br><span class="flaticon-pawprint"></span></a>
+										</li>
+										<li><a href="contact.php">Contact Us<br><span class="flaticon-pawprint"></span></a></li> 
+									</ul>
+									</div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/main_mane-->
+        </header>
+        <!--.slider_area-->
+        <section class="slider_area" style="background-image:url(images/slider/4.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="slider">
+                            <h2>CONTACT</h2>
+                            <p> <a href="index.php">Home <span>/</span></a> Contact</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/slider_area-->
+        <!-- start latest-news-->
+        <section class="contact-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <div class="contact-office">
+                            <h4>OUR OFFICE</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-map-o" aria-hidden="true"></i><br>Hope Animal Clinic<br>H. No. 9-2-364/B/25<br>Lane Opposite to Bapu Ghat Museum<br>Langer House<br>Hyderabad<br>Telangana<br>500008.</a></li>
+                                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+91 9912350971</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@hopeanimalclinichyd.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="default-form clearfix">
+                           <form action="<?php $_SERVER['PHP_SELF']?>" id="contact-form" method="POST">
+                                <div class="form-group lastname">
+                                    <input type="text" name="username" value="" placeholder="Name" required="">
+                                </div>
+                                <div class="form-group email">
+                                    <input type="email" name="email" value="" placeholder="Your Email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="phone" value="" placeholder="Phone Number" required="">
+                                </div>
+                                <div class="form-group comments">
+                                    <textarea name="message" placeholder="Your message" required=""></textarea>
+                                </div>
+                                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+                                <!--<button type="submit" data-loading-text="Please wait..." class="btn btn-one btn-tow">CONTACT US</button>-->
+                                <input type="submit" name="submit" data-loading-text="Please wait..." class="btn btn-one btn-tow" value="CONTACT US">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="map-section">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.7816381427597!2d78.4120470147312!3d17.37423730775764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96591fb22449%3A0x650f43d4a04d8f15!2sHope+Animal+Clinic!5e0!3m2!1sen!2sin!4v1506422826773" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End latest-news-->
+        <!--Start footer_area-->
+        <footer class="footer_area footer-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="about_us">
+                            <a href="index.php"><img src="images/logo/logo2.png" alt=""></a>
+                            <p>We Know Pets Are An Important <br> Part Of Your Family.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="working">
+                            <h2>QUICK LINKS</h2>
+                            <div class="useful">
+                                <ul>
+                                    <li><a href="index.php"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
+                                    <li><a href="services.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Services</a></li>
+                                    <li><a href="gallery-preview.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Gallery</a></li>
+                                    <li><a href="contact.php"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="resent_post">
+                            <h2>Resent Post</h2>
+                            <div class="resent resent-2">
+                                <h4><a href="blog-detail.html"><strong>Free Anti-Rabies Vaccination Camp</strong></a></h4>
+                                <p>Hope Animal Clinic Hyderabad </p>
+                            </div>
+                            <div class="resent">
+                                <h4><a href="blog-detail.html"><strong>World Heart Day</strong></a></h4>
+                                <p>Pet Heart Health Awareness Camp.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="tuoch">
+                            <h2>GET IN TOUCH</h2>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-map-o" aria-hidden="true"></i><br>Hope Animal Clinic<br>H. No. 9-2-364/B/25<br>Lane Opposite to Bapu Ghat Museum<br>Langer House<br>Hyderabad<br>Telangana<br>500008.</a></li>
+                                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+91 9912350971</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@hopeanimalclinichyd.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p>Copyright©2017 Hope Animal Clinic Hyderabad. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!--End footer_area-->
+
+    </div>
+    <!--Page Wrapper End-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/html5lightbox/html5lightbox.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC31UBmjzQP8E4E77aThaxT5cl0Y64a3gs"></script>
+    <script src="js/gmaps.js"></script>
+    <script src="js/map-helper.js"></script>
+
+
+
+
+
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
